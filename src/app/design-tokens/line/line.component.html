@@ -1,0 +1,25 @@
+<h1>Line</h1>
+<div class="text-block">
+  <p>
+    Lines are here to symbolize time. Time without a measurement as line or area
+    as shown with <strong>[1]</strong> and <strong>[5]</strong>, a specific time
+    period is shown under <strong>[4]</strong> or an interaction at a specific
+    point in time ilke in <strong>[2]</strong> and <strong>[3]</strong>. The
+    interaction can be initialized from the consumer <strong>[2]</strong> to the
+    producer <strong>[3,6]</strong>. Lines from the consumer side
+    <strong>[2]</strong> have in some cases description in form of the letters
+    S, U and C. Some lines from the producer side <strong>[6]</strong> can be
+    angled. This is possible to the right side only. <strong>[7][8]</strong>
+  </p>
+</div>
+<div class="preview-block">
+  <figure role="group" *ngFor="let line of lines">
+    <img [src]="line.img" alt="{{ line.alt }}" loading="lazy" />
+    <figcaption>
+      <span>Style: {{ line.style }}</span>
+      <span>Weight: {{ line.weight }}</span>
+      <span>Start: {{ line.start }}</span>
+      <span>End: {{ line.end }}</span>
+    </figcaption>
+  </figure>
+</div>

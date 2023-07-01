@@ -1,0 +1,88 @@
+<h1>Operators</h1>
+<div class="layout-buttons">
+  <button mat-button (click)="changeView(1)" [class.active]="activeView === 1">
+    List View
+  </button>
+  <button mat-button (click)="changeView(2)" [class.active]="activeView === 2">
+    Tile View
+  </button>
+</div>
+
+<h3>Search</h3>
+<form>
+  <mat-form-field>
+    <mat-label>Select Type</mat-label>
+    <mat-select
+      [(ngModel)]="groupFilter"
+      (ngModelChange)="applyFilters()"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <mat-option
+        *ngFor="let indexGroup of indexGroups"
+        [value]="indexGroup.value"
+      >
+        {{ indexGroup.group }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Search Text</mat-label>
+    <input
+      matInput
+      [(ngModel)]="searchFilter"
+      (ngModelChange)="applyFilters()"
+      [ngModelOptions]="{ standalone: true }"
+      placeholder="ex. defaultEmpty"
+      value=""
+    />
+  </mat-form-field>
+</form>
+
+<div class="index-items" *ngIf="listView">
+  <ul class="index-list">
+    <ng-container *ngFor="let indexItem of displayItems">
+      <a
+        class="index-list-route"
+        *ngIf="!indexItem.hidden"
+        [routerLink]="'detail/' + indexItem.desc"
+      >
+        <li class="index-list-item">
+          <span class="index-group {{ indexItem.class }}"></span
+          >{{ indexItem.desc }}
+        </li>
+      </a>
+    </ng-container>
+  </ul>
+</div>
+
+<div class="index-items" *ngIf="tileView">
+  <ul class="index-list">
+    <ng-container *ngFor="let indexItem of displayItems">
+      <a
+        class="index-list-route-tile"
+        *ngIf="!indexItem.hidden"
+        [routerLink]="'detail/' + indexItem.desc"
+      >
+        <li class="index-list-item-tile">
+          <img
+            *ngIf="indexItem.image"
+            [src]="indexItem.image"
+            alt="Operator Image Preview"
+            loading="lazy"
+          />
+          <img
+            *ngIf="!indexItem.image"
+            src="../../assets/no-preview.svg"
+            alt="No Preview Image"
+            loading="lazy"
+          />
+          <div class="index-info">
+            <span class="index-group {{ indexItem.class }}"></span
+            >{{ indexItem.desc }}
+          </div>
+        </li>
+      </a>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,128 @@
+@import "abstracts/index";
+
+.sidenav-container {
+  height: 100%;
+  background: $color__body;
+}
+
+.sidenav {
+  width: 260px;
+  background-color: $color__sidenav;
+
+  @include breakpoint(mobile-land) {
+    width: 280px;
+  }
+}
+
+.nav-caption {
+  font-size: 1.6rem;
+  color: $color__primary-900;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 0 20px $color__shadow;
+
+  &.toolbar-topnav {
+    background: $color__topnav;
+
+    button {
+      margin-left: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px $color__shadow;
+
+      &:hover {
+        .mat-icon {
+          color: $color__primary-300;
+        }
+      }
+    }
+  }
+  &.toolbar-sidenav {
+    background-color: $color__sidenav;
+    color: $color__black;
+  }
+}
+
+.mat-icon {
+  color: $color__primary-700;
+  transition: all 200ms ease-in-out;
+  margin-right: 10px;
+}
+
+.mat-drawer-side {
+  border: none;
+}
+
+.logo {
+  img {
+    width: 140px;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+}
+
+.mat-toolbar-single-row {
+  a.github {
+    margin-left: auto;
+    width: 30px;
+    height: calc(64px - 30px);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include breakpoint-less(mobile-land) {
+    height: 64px;
+  }
+}
+
+.mat-icon-button[disabled] {
+  display: none;
+}
+
+.list-item-active > li > .nav-caption,
+.list-item-active > li > .mat-icon {
+  color: $color__secondary-600;
+  transition: none;
+}
+
+// MAT-Tree
+
+.nav-tree-invisible {
+  display: none;
+}
+
+.nav-tree ul,
+.nav-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.mat-icon-button {
+  box-shadow: none;
+  margin: 0 0 0 auto;
+}
+
+.mat-tree {
+  background: transparent;
+  padding: 2rem;
+}
+
+.mat-tree-node {
+  cursor: pointer;
+  min-height: auto;
+  padding: 0.7rem 0;
+
+  a {
+    width: 100%;
+  }
+}
+
+.nav-tree-nested > ul {
+  padding-left: 1rem;
+}

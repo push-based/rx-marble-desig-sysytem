@@ -1,0 +1,33 @@
+@import "abstracts/index";
+
+.layout-buttons {
+  margin-bottom: 3rem;
+
+  button {
+    margin-right: 1rem;
+    @include breakpoint-less(mobile) {
+      font-size: 13px;
+    }
+  }
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+mat-form-field {
+  font: inherit;
+  margin-right: 4rem;
+  @include breakpoint-less(tablet) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+mat-option {
+  font: inherit;
+}
+
+.active {
+  background-color: $color__primary-600;
+}

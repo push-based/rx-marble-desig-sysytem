@@ -1,0 +1,34 @@
+@import "abstracts/variables";
+
+// Reset Default Button Styles Start
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  border: none;
+}
+
+// Reset Default Button Styles End
+
+a.btn,
+button,
+button.btn {
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 5rem;
+  color: black;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  border: none;
+  border-radius: 0.5rem;
+  font: inherit;
+  box-shadow: 0 0 20px $color__shadow;
+
+  &:hover {
+    color: white;
+  }
+}

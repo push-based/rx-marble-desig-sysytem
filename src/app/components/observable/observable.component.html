@@ -1,0 +1,23 @@
+<h1>Observable</h1>
+<div class="text-block">
+  <p>
+    Time in marble diagrams is represented as
+    <strong>an arrow going from left to right.</strong> The arrow at the same
+    time is also a representation of an observable itself. Time is measured in
+    <strong>frames</strong>, a superset of blocks.
+    <strong>1 frame is 2 blocks</strong>
+  </p>
+</div>
+<div class="preview-block">
+  <figure role="group" *ngFor="let observable of observables">
+    <img
+      [class]="observable.styleClass"
+      [src]="observable.img"
+      alt="{{ observable.alt }}"
+      loading="lazy"
+    />
+    <figcaption>
+      <span>{{ observable.desc }}</span>
+    </figcaption>
+  </figure>
+</div>
