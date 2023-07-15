@@ -16,7 +16,7 @@
 
 .nav-caption {
   font-size: 1.6rem;
-  color: $color__primary-900;
+  color: white;
 }
 
 mat-toolbar {
@@ -47,7 +47,7 @@ mat-toolbar {
 }
 
 .mat-icon {
-  color: $color__primary-700;
+  color: white;
   transition: all 200ms ease-in-out;
   margin-right: 10px;
 }
@@ -109,8 +109,10 @@ mat-toolbar {
 }
 
 .mat-tree {
-  background: transparent;
+  background: $color__brand-primary;
   padding: 2rem;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .mat-tree-node {
@@ -125,4 +127,6 @@ mat-toolbar {
 
 .nav-tree-nested > ul {
   padding-left: 1rem;
+  height: max-content;
 }
+

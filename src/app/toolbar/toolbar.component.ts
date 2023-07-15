@@ -20,6 +20,11 @@ const TREE_DATA: NavNode[] = [
     icon: 'home',
   },
   {
+    name: 'Marble Diagrams',
+    routerLink: '/mds-diagrams',
+    icon: 'list',
+  },
+  {
     name: 'Marble Design System',
     icon: 'blur_circular',
     children: [
@@ -214,61 +219,9 @@ const TREE_DATA: NavNode[] = [
             name: 'Operator Nesting',
             icon: 'remove'
           },
-          {
-            routerLink: '/diagrams/inactive-components',
-            name: 'Inactive Components',
-            icon: 'remove'
-          },
-          {
-            routerLink: '/diagrams/examples-per-operator',
-            name: 'Examples per Operator',
-            icon: 'remove'
-          }
-        ]
-      },
-      {
-        name: 'Beyond the Standard',
-        icon: 'toys',
-        children: [
-          {
-            routerLink: '/beyond-the-standard/alternative-shape',
-            name: 'Alternative Shape',
-            icon: 'remove'
-          },
-          {
-            routerLink: '/beyond-the-standard/alternative-units',
-            name: 'Alternative Units',
-            icon: 'remove'
-          },
-          {
-            routerLink: '/beyond-the-standard/todos',
-            name: 'ToDos',
-            icon: 'remove'
-          },
-          {
-            routerLink: '/beyond-the-standard/vertical-layout',
-            name: 'Vertical Layout',
-            icon: 'remove'
-          }
-        ]
-      },
-      {
-        name: 'Open Issues',
-        icon: 'report_problem',
-        children: [
-          {
-            routerLink: '/open-issues/operations-and-their-end',
-            name: 'Operation and their end',
-            icon: 'remove'
-          }
         ]
       },
     ]
-  },
-  {
-    name: 'Marble Diagrams',
-    routerLink: '/mds-diagrams',
-    icon: 'list',
   },
 ];
 
