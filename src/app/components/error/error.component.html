@@ -1,19 +1,21 @@
 <h1>Error</h1>
 <div class="text-block">
-  <p>
-    Error symbolizes one possible end of an observable.
-  </p>
+    <p>
+        The source observable may encounter an error. This error event indicates that an error has occurred in the
+        observable stream and no more values will be emitted. It is represented by a circle with a cross (X) at the end
+        of the source observable line.
+    </p>
 </div>
 <div class="preview-block">
-  <figure role="group" *ngFor="let error of errors">
-    <img
-      [class]="error.styleClass"
-      [src]="error.img"
-      alt="{{ error.alt }}"
-      loading="lazy"
-    />
-    <figcaption>
-      <span *ngIf="error.desc">{{ error.desc }}</span>
-    </figcaption>
-  </figure>
+    <figure role="group" *ngFor="let error of errors">
+        <img
+                [class]="error.styleClass"
+                [src]="error.img"
+                alt="{{ error.alt }}"
+                loading="lazy"
+        />
+        <figcaption>
+            <span *ngIf="error.desc">{{ error.desc }}</span>
+        </figcaption>
+    </figure>
 </div>

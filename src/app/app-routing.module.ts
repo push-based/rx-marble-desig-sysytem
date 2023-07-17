@@ -76,13 +76,13 @@ const routes: Routes = [
             {path: 'observable', component: ObservableComponent},
             {path: 'time-span', component: TimeSpanComponent},
             {path: 'event-in-time', component: EventInTimeComponent},
-            {path: 'operation', component: OperationComponent},
-            {path: 'consumer-event', component: ConsumerEventComponent},
             {path: 'notifications', component: NotificationsComponent},
-            {path: 'completion', component: CompletionComponent},
             {path: 'error', component: ErrorComponent},
+            {path: 'completion', component: CompletionComponent},
+            {path: 'operation', component: OperationComponent},
             {path: 'operator', component: OperatorComponent},
-            {path: 'task-stacks', component: TaskStacksComponent}
+            {path: 'task-stacks', component: TaskStacksComponent},
+            {path: 'consumer-event', component: ConsumerEventComponent}
         ]
     },
     {
