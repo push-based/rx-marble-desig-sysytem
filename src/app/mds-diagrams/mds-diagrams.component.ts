@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MdsDiagram, mdsDiagrams} from "./diagrams";
+import {MdsDiagram, mdsDiagrams} from './diagrams';
 
 @Component({
   selector: 'mds-mds-diagrams',
