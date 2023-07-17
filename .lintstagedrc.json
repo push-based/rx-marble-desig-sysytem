@@ -1,7 +1,11 @@
 {
-  "**/*.+(js|md)": [
+  "*.ts": [
     "prettier --write",
-    "eslint --fix src/",
-    "git add"
-  ]
+    "eslint"
+  ],
+  "*.html": [
+    "eslint",
+    "prettier --write"
+  ],
+  "*.scss": "prettier --write"
 }
