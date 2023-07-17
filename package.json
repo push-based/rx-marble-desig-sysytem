@@ -10,7 +10,18 @@
     "build": "ng build",
     "lint": "ng lint",
     "fix-lint": "ng lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
+  },
+  "lint-staged": {
+    "src/**/*.{ts,css,html}": [
+      "npm run prettier:check"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "private": true,
   "dependencies": {
@@ -39,6 +50,7 @@
     "codelyzer": "^5.1.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
