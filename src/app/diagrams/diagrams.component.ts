@@ -13,6 +13,5 @@ export class DiagramsComponent implements OnInit {
     if (this.location.path() === '/diagrams') {
       this.router.navigate(['diagrams', 'sections']);
     }
-    console.log('hello world');
   }
 }
