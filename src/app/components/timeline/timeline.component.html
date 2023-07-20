@@ -1,0 +1,22 @@
+<h1>Observable</h1>
+<div class="text-block">
+    <p>
+        Observable represents a data stream that can be actively observed over time. The solid timeline is directly
+        related to the Observable being active and continuously emitting data or events. As long as the Observable is
+        active and responsive, the timeline remains coherent, allowing developers to work with real-time data and events
+        effectively.
+    </p>
+</div>
+<div class="preview-block">
+    <figure role="group" *ngFor="let observable of observables">
+        <img
+                [class]="observable.styleClass"
+                [src]="observable.img"
+                alt="{{ observable.alt }}"
+                loading="lazy"
+        />
+        <figcaption>
+            <span>{{ observable.desc }}</span>
+        </figcaption>
+    </figure>
+</div>
