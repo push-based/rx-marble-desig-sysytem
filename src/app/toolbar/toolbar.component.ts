@@ -74,8 +74,8 @@ const TREE_DATA: NavNode[] = [
                         icon: 'remove'
                     },
                     {
-                        routerLink: '/components/observable',
-                        name: 'Observable',
+                        routerLink: '/components/timeline',
+                        name: 'Timeline',
                         icon: 'remove'
                     },
                     {

@@ -1,22 +1,22 @@
-<h1>Observable</h1>
+<h1>Timeline</h1>
 <div class="text-block">
     <p>
-        Observable represents a data stream that can be actively observed over time. The solid timeline is directly
-        related to the Observable being active and continuously emitting data or events. As long as the Observable is
-        active and responsive, the timeline remains coherent, allowing developers to work with real-time data and events
-        effectively.
+        Time in marble diagrams is represented as an arrow going from left to right. The arrow at the same time is also
+        a representation of an Observable itself. The solid timeline is directly related to the Observable being active
+        and continuously emitting data or events. As long as the Observable is active and responsive, the timeline
+        remains coherent. Time is measured in frames, a superset of blocks. 1 frame is 2 blocks
     </p>
 </div>
 <div class="preview-block">
-    <figure role="group" *ngFor="let observable of observables">
+    <figure role="group" *ngFor="let timeline of timelines">
         <img
-                [class]="observable.styleClass"
-                [src]="observable.img"
-                alt="{{ observable.alt }}"
+                [class]="timeline.styleClass"
+                [src]="timeline.img"
+                alt="{{ timeline.alt }}"
                 loading="lazy"
         />
         <figcaption>
-            <span>{{ observable.desc }}</span>
+            <span>{{ timeline.desc }}</span>
         </figcaption>
     </figure>
 </div>

@@ -17,7 +17,7 @@ import {LineComponent} from './design-tokens/line/line.component';
 import {ShapeComponent} from './design-tokens/shape/shape.component';
 import {SizeComponent} from './design-tokens/size/size.component';
 import {OverviewComponent} from './components/overview/overview.component';
-import {ObservableComponent} from './components/observable/observable.component';
+import {TimelineComponent} from './components/timeline/timeline.component';
 import {TimeSpanComponent} from './components/time-span/time-span.component';
 import {EventInTimeComponent} from './components/event-in-time/event-in-time.component';
 import {OperationComponent} from './components/operation/operation.component';
@@ -69,7 +69,7 @@ import {DiagramDetailsComponent} from './mds-diagrams/diagram-details/diagram-de
         ShapeComponent,
         SizeComponent,
         OverviewComponent,
-        ObservableComponent,
+        TimelineComponent,
         TimeSpanComponent,
         EventInTimeComponent,
         OperationComponent,

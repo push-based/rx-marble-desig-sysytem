@@ -1,22 +1,24 @@
 <h1>Multiple Notifications in One Frame</h1>
 <div class="text-block">
-  <p></p>
+    <p>As notifications can only be placed in frames,they can not overlap. However, technically it is possible to have
+        multiple notifications in one frame. In very rare cases there can be multiple different colors and shapes in the
+        same frame. In this case we use the legend to provide enough information.</p>
 </div>
 <div class="preview-block">
-  <figure
-    role="group"
-    *ngFor="let multipleNotification of multipleNotifications"
-  >
-    <img
-      [class]="multipleNotification.styleClass"
-      [src]="multipleNotification.img"
-      alt="{{ multipleNotification.alt }}"
-      loading="lazy"
-    />
-    <figcaption>
+    <figure
+            role="group"
+            *ngFor="let multipleNotification of multipleNotifications"
+    >
+        <img
+                [class]="multipleNotification.styleClass"
+                [src]="multipleNotification.img"
+                alt="{{ multipleNotification.alt }}"
+                loading="lazy"
+        />
+        <figcaption>
       <span *ngIf="multipleNotification.desc">{{
-        multipleNotification.desc
-      }}</span>
-    </figcaption>
-  </figure>
+          multipleNotification.desc
+          }}</span>
+        </figcaption>
+    </figure>
 </div>

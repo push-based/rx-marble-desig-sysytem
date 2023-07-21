@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'mds-time',
-  templateUrl: './time.component.html',
-  styleUrls: ['./time.component.scss']
+  selector: 'mds-timeline',
+  templateUrl: './timeline.component.html',
+  styleUrls: ['./timeline.component.scss']
 })
-export class TimeComponent implements OnInit {
+export class TimelineComponent implements OnInit {
 
-  public observables = [
+  public timelines = [
     {
-      img: '/assets/graphics/components/observable/timeline1.svg',
+      img: '/assets/graphics/components/timeline/timeline1.svg',
       alt: 'Timeline 1 Graphic',
     },
     {
-      img: '/assets/graphics/components/observable/timeline2.svg',
+      img: '/assets/graphics/components/timeline/timeline2.svg',
       alt: 'Timeline 2 Graphic',
       styleClass: 'big'
     }
