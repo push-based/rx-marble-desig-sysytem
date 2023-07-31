@@ -11,13 +11,13 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'rate-limit',
         desc: 'audit',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/audit.png?raw=true',
+        image: '/assets/diagrams/audit.png'
     },
     {
         hidden: false,
         class: 'rate-limit',
         desc: 'auditTime',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/auditTime.png?raw=true'
+        image: '/assets/diagrams/auditTime.png'
     },
     {
         hidden: false,
@@ -63,25 +63,25 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'merge',
         desc: 'concat',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/concat.png?raw=true'
+        image: '/assets/diagrams/concat.png'
     },
     {
         hidden: false,
         class: 'merge',
         desc: 'concatAll',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/concatAll.png?raw=true'
+        image: '/assets/diagrams/concatAll.png'
     },
     {
         hidden: false,
         class: 'merge',
         desc: 'concatMap',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/concatMap.png?raw=true'
+        image: '/assets/diagrams/concatMap.png'
     },
     {
         hidden: false,
         class: 'merge',
         desc: 'concatMapTo',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/concatMapTo.png?raw=true'
+        image: '/assets/diagrams/concatMapTo.png'
     },
     {
         hidden: false,
@@ -92,13 +92,13 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'rate-limit',
         desc: 'debounce',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/debounce.png?raw=true'
+        image: '/assets/diagrams/debounce.png'
     },
     {
         hidden: false,
         class: 'rate-limit',
         desc: 'debounceTime',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/debounceTime.png?raw=true'
+        image: '/assets/diagrams/debounceTime.png'
     },
     {
         hidden: false,
@@ -119,22 +119,25 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'transform',
         desc: 'dematerialize',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/subjects/Subject.png?raw=true'
+        image: '/assets/diagrams/dematerialize.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'distinct'
+        desc: 'distinct',
+        image: '/assets/diagrams/distinct.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'distinctUntilChanged'
+        desc: 'distinctUntilChanged',
+        image: '/assets/diagrams/distinctUntilChanged.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'distinctUntilKexChanged'
+        desc: 'distinctUntilKeyChanged',
+        image: '/assets/diagrams/distinctUntilKeyChanged.png'
     },
     {
         hidden: false,
@@ -145,7 +148,7 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'combine',
         desc: 'endWith',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/endWith.png?raw=true'
+        image: '/assets/diagrams/endWith.png'
     },
     {
         hidden: false,
@@ -155,22 +158,26 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'merge',
-        desc: 'exhaust'
+        desc: 'exhaust',
+        image: '/assets/diagrams/exhaust.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'exhaustMap'
+        desc: 'exhaustMap',
+        image: '/assets/diagrams/exhaustMap.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'expand'
+        desc: 'expand',
+        image: '/assets/diagrams/expand.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'Filter'
+        desc: 'filter',
+        image: '/assets/diagrams/filter.png'
     },
     {
         hidden: false,
@@ -190,7 +197,8 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'filter',
-        desc: 'first'
+        desc: 'first',
+        image: '/assets/diagrams/first.png'
     },
     {
         hidden: false,
@@ -216,19 +224,19 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'transform',
         desc: 'map',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/map.png?raw=true'
+        image: '/assets/diagrams/map.png'
     },
     {
         hidden: false,
         class: 'transform',
         desc: 'mapTo',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/mapTo.png?raw=true'
+        image: '/assets/diagrams/mapTo.png'
     },
     {
         hidden: false,
         class: 'transform',
         desc: 'materialize',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/materialize.png?raw=true'
+        image: '/assets/diagrams/materialize.png'
     },
     {
         hidden: false,
@@ -238,32 +246,37 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'merge',
-        desc: 'merge'
+        desc: 'merge',
+        image: '/assets/diagrams/merge.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'mergeAll'
+        desc: 'mergeAll',
+        image: '/assets/diagrams/mergeAll.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'mergeMap'
+        desc: 'mergeMap',
+        image: '/assets/diagrams/mergeMap.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'flatMap'
+        desc: 'flatMap',
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'mergeMapTp'
+        desc: 'mergeMapTo',
+        image: '/assets/diagrams/mergeMapTo.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'mergeScan'
+        desc: 'mergeScan',
+        image: '/assets/diagrams/mergeScan.png'
     },
     {
         hidden: false,
@@ -275,11 +288,6 @@ export const mdsDiagrams: MdsDiagram[] = [
         class: 'scheduling',
         desc: 'observeOn',
         image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/scheduling/observeOn.png?raw=true'
-    },
-    {
-        hidden: false,
-        class: 'error-handling',
-        desc: 'onErrorResumeNext'
     },
     {
         hidden: false,
@@ -295,7 +303,7 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'transform',
         desc: 'pluck',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/pluck.png?raw=true'
+        image: '/assets/diagrams/pluck.png'
     },
     {
         hidden: false,
@@ -331,13 +339,13 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'rate-limit',
         desc: 'sample',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/sample.png?raw=true'
+        image: '/assets/diagrams/sample.png'
     },
     {
         hidden: false,
         class: 'rate-limit',
         desc: 'sampleTime',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/sampleTime.png?raw=true'
+        image: '/assets/diagrams/sampleTime.png'
     },
     {
         hidden: false,
@@ -357,28 +365,32 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'filter',
-        desc: 'skip'
+        desc: 'skip',
+        image: '/assets/diagrams/skip.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'skipLast'
+        desc: 'skipLast',
+        image: '/assets/diagrams/skipLast.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'skipUntil'
+        desc: 'skipUntil',
+        image: '/assets/diagrams/skipUntil.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'skipWhile'
+        desc: 'skipWhile',
+        image: '/assets/diagrams/skipWhile.png'
     },
     {
         hidden: false,
         class: 'combine',
         desc: 'startWith',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/flattening/concat/startWith.png?raw=true'
+        image: '/assets/diagrams/startWith.png'
     },
     {
         hidden: false,
@@ -389,42 +401,50 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'merge',
-        desc: 'switchAll'
+        desc: 'switchAll',
+        image: '/assets/diagrams/switchAll.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'switchMap'
+        desc: 'switchMap',
+        image: '/assets/diagrams/switchMap.png'
     },
     {
         hidden: false,
         class: 'merge',
-        desc: 'switchMapTo'
+        desc: 'switchMapTo',
+        image: '/assets/diagrams/switchMapTo.png'
     },
     {
         hidden: false,
         class: 'combine',
-        desc: 'switchScan'
+        desc: 'switchScan',
+        image: '/assets/diagrams/switchScan.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'take'
+        desc: 'take',
+        image: '/assets/diagrams/take.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'takeLast'
+        desc: 'takeLast',
+        image: '/assets/diagrams/takeLast.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'takeUntil'
+        desc: 'takeUntil',
+        image: '/assets/diagrams/takeUntil.png'
     },
     {
         hidden: false,
         class: 'filter',
-        desc: 'takeWhile'
+        desc: 'takeWhile',
+        image: '/assets/diagrams/takeWhile.png'
     },
     {
         hidden: false,
@@ -435,13 +455,13 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'rate-limit',
         desc: 'throttle',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/throttle.png?raw=true'
+        image: '/assets/diagrams/throttle.png'
     },
     {
         hidden: false,
         class: 'rate-limit',
         desc: 'throttleTime',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/rate-limiting/throttleTime.png?raw=true'
+        image: '/assets/diagrams/throttleTime.png'
     },
     {
         hidden: false,
@@ -451,8 +471,8 @@ export const mdsDiagrams: MdsDiagram[] = [
     {
         hidden: false,
         class: 'transform',
-        desc: 'timeInInterval',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/timeInterval.png?raw=true'
+        desc: 'timeInterval',
+        image: '/assets/diagrams/timeInterval.png'
     },
     {
         hidden: false,
@@ -468,7 +488,7 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'transform',
         desc: 'timestamp',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/timestamp.png?raw=true'
+        image: '/assets/diagrams/timestamp.png'
     },
     {
         hidden: false,
@@ -529,16 +549,6 @@ export const mdsDiagrams: MdsDiagram[] = [
     },
     {
         hidden: false,
-        class: 'combine',
-        desc: 'combineLatest'
-    },
-    {
-        hidden: false,
-        class: 'merge',
-        desc: 'concat'
-    },
-    {
-        hidden: false,
         class: 'creation',
         desc: 'create'
     },
@@ -589,11 +599,6 @@ export const mdsDiagrams: MdsDiagram[] = [
     },
     {
         hidden: false,
-        class: 'merge',
-        desc: 'merge'
-    },
-    {
-        hidden: false,
         class: 'creation',
         desc: 'NEVER'
     },
@@ -611,12 +616,7 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'transform',
         desc: 'pairs',
-        image: 'https://github.com/BioPhoton/Rx-Marble-Design-System/blob/dev/assets/operators/new/trasform/pairs.png?raw=true'
-    },
-    {
-        hidden: false,
-        class: 'condition',
-        desc: 'race'
+        image: '/assets/diagrams/pairs.png'
     },
     {
         hidden: false,
@@ -644,10 +644,5 @@ export const mdsDiagrams: MdsDiagram[] = [
         hidden: false,
         class: 'timing',
         desc: 'timer'
-    },
-    {
-        hidden: false,
-        class: 'combine',
-        desc: 'zip'
     },
 ];

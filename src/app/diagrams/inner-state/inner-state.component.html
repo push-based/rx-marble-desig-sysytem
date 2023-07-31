@@ -1,17 +1,20 @@
 <h1>Inner State</h1>
 <div class="text-block">
-  <p></p>
+    <p>Observable inner state is encapsulated within the Observable object. The Observer can subscribe to this
+        Observable and receive notifications when new values are emitted. The observable inner state is not directly
+        accessible or modifiable from the outside; rather, it is controlled by the Observable itself and the stream of
+        data it represents.</p>
 </div>
 <div class="preview-block">
-  <figure role="group" *ngFor="let innerState of innerStates">
-    <img
-      [class]="innerState.styleClass"
-      [src]="innerState.img"
-      alt="{{ innerState.alt }}"
-      loading="lazy"
-    />
-    <figcaption>
-      <span *ngIf="innerState.desc">{{ innerState.desc }}</span>
-    </figcaption>
-  </figure>
+    <figure role="group" *ngFor="let innerState of innerStates">
+        <img
+                [class]="innerState.styleClass"
+                [src]="innerState.img"
+                alt="{{ innerState.alt }}"
+                loading="lazy"
+        />
+        <figcaption>
+            <span *ngIf="innerState.desc">{{ innerState.desc }}</span>
+        </figcaption>
+    </figure>
 </div>
