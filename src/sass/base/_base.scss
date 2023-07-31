@@ -36,7 +36,7 @@ h4 {
 h1 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: $color__primary-900;
+  color: $color__brand-primary;
 
   @include breakpoint(tablet) {
     font-size: 3.4rem;
@@ -47,7 +47,7 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.8rem;
-  color: $color__primary-900;
+  color: $color__brand-primary;
 
   @include breakpoint(tablet) {
     font-size: 2.8rem;
@@ -58,7 +58,7 @@ h3 {
   font-size: 1.8rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  color: $color__primary-900;
+  color: $color__brand-primary;
 
   @include breakpoint(tablet) {
     font-size: 2.2rem;
@@ -86,7 +86,7 @@ ul {
   }
 
   a {
-    color: $color__primary-600;
+    color: $color__brand-tertiary;
     transition: all 0.25s;
 
     &:hover {
@@ -98,7 +98,7 @@ ul {
 .bullet {
   width: 10px;
   height: 10px;
-  background-color: $color__primary-600;
+  background-color: $color__brand-tertiary;
   border-radius: 2px;
   display: inline-block;
   margin-right: 1.5rem;
@@ -130,7 +130,7 @@ p {
 }
 
 strong {
-  color: $color__primary-600;
+  color: $color__brand-tertiary;
 }
 
 .bold {

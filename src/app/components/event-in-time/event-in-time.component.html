@@ -1,13 +1,17 @@
 <h1>Event In Time</h1>
 <div class="text-block">
-  <p></p>
+    <p>In an observable timeline, an event represents a specific occurrence or action that happens at a particular point
+        in time within the observable stream. Events are an integral part of the observable's sequence of values and can
+        trigger actions. As time progresses, the observable emits events at specific points along the timeline. Each
+        event emission represents a specific occurrence or action happening within the observable lifetime. These
+        emissions are depicted as a circle within vertical dashed lines extending from the observable line.</p>
 </div>
 <div class="preview-block">
-  <figure role="group" *ngFor="let eventInTime of eventInTimes">
-    <img [src]="eventInTime.img" alt="{{ eventInTime.alt }}" loading="lazy" />
-    <figcaption>
-      <span *ngIf="eventInTime.object">Object: {{ eventInTime.object }}</span>
-      <span *ngIf="eventInTime.shape">Shape: {{ eventInTime.shape }}</span>
-    </figcaption>
-  </figure>
+    <figure role="group" *ngFor="let eventInTime of eventInTimes">
+        <img [src]="eventInTime.img" alt="{{ eventInTime.alt }}" loading="lazy"/>
+        <figcaption>
+            <span *ngIf="eventInTime.object">Object: {{ eventInTime.object }}</span>
+            <span *ngIf="eventInTime.shape">Shape: {{ eventInTime.shape }}</span>
+        </figcaption>
+    </figure>
 </div>
